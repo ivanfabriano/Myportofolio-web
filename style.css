@@ -1,0 +1,341 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f3f4f5;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background: rgb(74, 0, 202);
+  background: linear-gradient(
+    0deg,
+    rgba(74, 0, 202, 1) 0%,
+    rgba(84, 0, 202, 0.8883928571428571) 47%,
+    rgba(33, 0, 202, 0.8379726890756303) 100%
+  );
+}
+.jumbotron {
+  background-color: #00cba900;
+  width: 100%;
+  height: 200px;
+  margin: 50px;
+  margin-top: 100px;
+  padding-top: 50px;
+  justify-content: center;
+  flex: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.flex-item-left {
+  display: flex;
+  background-color: #00cba900;
+  padding: 15px;
+  margin: 5px;
+  flex: 50%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flex-item-right {
+  display: flex;
+  background-color: #00cba900;
+  padding: 10px;
+  margin: 5px;
+  flex: 100%;
+  align-items: center;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 210px;
+  background-color: rgb(31, 30, 30);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.path-trans {
+  position: relative;
+  background: #f3f4f5;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+.flex-item-right > div {
+  background-color: #00cba900;
+  color: white;
+}
+.flex-item-left > div {
+  background-color: #00cba900;
+}
+.responsive {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  margin: 5px;
+  text-align: center;
+}
+.contact > img {
+  margin-left: 4px;
+}
+#navbar {
+  overflow: hidden;
+  z-index: 100;
+}
+.title {
+  text-align: center;
+  background-color: #f3f4f5;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+.title > h2 {
+  margin: 0;
+}
+.showcase {
+  padding-top: 50px;
+}
+.showCont {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  background-color: #f3f4f5;
+  padding: 30px;
+}
+.showCont > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 0px 0;
+  font-size: 30px;
+  margin-top: 0px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+.image-galery {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-bottom-left-radius: 5%;
+  border-bottom-right-radius: 5%;
+  border-width: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.galery {
+  position: relative;
+}
+.galery:hover .image-galery {
+  opacity: 0.3;
+}
+
+.galery:hover .caption {
+  opacity: 1;
+}
+.text {
+  background-color: rgb(241, 240, 240);
+  color: rgb(10, 10, 10);
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.b-visit {
+  background: rgba(74, 0, 202, 0.562);
+  border-radius: 5px;
+  padding: 0;
+  padding: 3px;
+  transition-duration: 0.6s;
+}
+.b-visit:hover {
+  background: rgb(74, 0, 202);
+}
+.link {
+  text-decoration: none;
+  color: rgb(245, 245, 236);
+}
+.caption {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.skill-container {
+  background: #273036;
+}
+.title-skill {
+  text-align: center;
+  color: #f2f2f2;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 40px;
+  padding: 30px;
+  padding-bottom: 60px;
+}
+.skill-list > div {
+  text-align: center;
+  font-size: 30px;
+}
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  transition-duration: 0.6s;
+}
+
+#navbar a:hover {
+  color: rgb(252, 248, 23);
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+.card {
+  font-size: small;
+}
+
+.card-bottom {
+  display: none;
+}
+.logo {
+  margin-left: 15px;
+}
+.logo > h2{
+  margin:0;
+  margin-top:5px;
+  padding:0;
+  margin-left:60px;
+  color:#f2f2f2
+}
+.link-logo {
+  margin: 0px;
+  padding-top: 0px;
+}
+.nav-child {
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-template-rows: auto auto;
+  justify-items: end;
+  margin-right: 50px;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgb(74, 0, 202);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.6s;
+}
+
+.nav-aqua {
+  box-shadow: none;
+  background-color: #00cba900;
+  transition-duration: 0.6s;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+@media (max-width: 800px) {
+  .jumbotron {
+    flex-direction: column;
+    height: 600px;
+  }
+  .flex-item-right {
+    margin-top: 10px;
+    align-items: start;
+  }
+  .flex-item-right > div {
+    text-align: center;
+  }
+  .showCont {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .text {
+    display: none;
+  }
+  .card-bottom {
+    display: block;
+    font-size: 13px;
+    padding: 0px 20px;
+  }
+  .b-visit {
+    padding: 1px;
+    font-size: 20px;
+    background: none;
+    display: inline-block;
+  }
+  .galery {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .image-galery {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-width: 10px;
+    box-shadow: none;
+  }
+  .nav-child {
+    grid-template-columns: auto auto;
+  }
+  .logo {
+    margin-left: 0px;
+  }
+  .logo > h2{
+    padding:0;
+    margin-left:20px;
+    margin-right:10px
+  }
+  .skill-list {
+    grid-template-columns: auto auto;
+  }
+}
